@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İzfashion - Kadın Giyim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav {
+            background-color: #444;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 50vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .products, .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product, .category {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 1rem;
+            padding: 1rem;
+            width: calc(30% - 2rem);
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .product img, .category img {
+            max-width: 100%;
+        }
+        .product h3, .category h3 {
+            margin: 0.5rem 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>İzfashion</h1>
+        <p>Modern ve Zarif Kadın Giyim</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Anasayfa</a></li>
+            <li><a href="#categories">Kategoriler</a></li>
+            <li><a href="#about">Hakkımızda</a></li>
+            <li><a href="#contact">İletişim</a></li>
+            <li><a href="#shipping">Ödeme ve Kargo</a></li>
+        </ul>
+    </nav>
+    <div class="hero" id="home">
+        <h1>İzfashion'a Hoşgeldiniz</h1>
+    </div>
+    <div class="container" id="categories">
+        <h2>Kategoriler</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="dresses.jpg" alt="Elbiseler">
+                <h3>Elbiseler</h3>
+                <a href="#dresses">Ürünleri Görüntüle</a>
+            </div>
+            <div class="category">
+                <img src="tops.jpg" alt="Üstler">
+                <h3>Üstler</h3>
+                <a href="#tops">Ürünleri Görüntüle</a>
+            </div>
+            <div class="category">
+                <img src="bottoms.jpg" alt="Alt Takımlar">
+                <h3>Alt Takımlar</h3>
+                <a href="#bottoms">Ürünleri Görüntüle</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="dresses">
+        <h2>Elbiseler</h2>
+        <div class="products">
+            <div class="product">
+                <img src="dress1.jpg" alt="Elbise 1">
+                <h3>Elbise 1</h3>
+                <p>Şık ve zarif elbise.</p>
+                <p>₺100</p>
+                <a href="#dress-details">Detaylar</a>
+            </div>
+            <div class="product">
+                <img src="dress2.jpg" alt="Elbise 2">
+                <h3>Elbise 2</h3>
+                <p>Günlük kullanıma uygun elbise.</p>
+                <p>₺120</p>
+                <a href="#dress-details">Detaylar</a>
+            </div>
+            <!-- 3 ürün daha eklenecek -->
+        </div>
+    </div>
+    <div class="container" id="tops">
+        <h2>Üstler</h2>
+        <div class="products">
+            <div class="product">
+                <img src="top1.jpg" alt="Üst 1">
+                <h3>Üst 1</h3>
+                <p>Rahat ve şık üst.</p>
+                <p>₺80</p>
+                <a href="#top-details">Detaylar</a>
+            </div>
+            <div class="product">
+                <img src="top2.jpg" alt="Üst 2">
+                <h3>Üst 2</h3>
+                <p>Günlük kullanıma uygun üst.</p>
+                <p>₺90</p>
+                <a href="#top-details">Detaylar</a>
+            </div>
+            <!-- 3 ürün daha eklenecek -->
+        </div>
+    </div>
+    <div class="container" id="bottoms">
+        <h2>Alt Takımlar</h2>
+        <div class="products">
+            <div class="product">
+                <img src="bottom1.jpg" alt="Alt 1">
+                <h3>Alt 1</h3>
+                <p>Rahat ve şık pantolon.</p>
+                <p>₺70</p>
+                <a href="#bottom-details">Detaylar</a>
+            </div>
+            <div class="product">
+                <img src="bottom2.jpg" alt="Alt 2">
+                <h3>Alt 2</h3>
+                <p>Günlük kullanıma uygun pantolon.</p>
+                <p>₺75</p>
+                <a href="#bottom-details">Detaylar</a>
+            </div>
+            <!-- 3 ürün daha eklenecek -->
+        </div>
+    </div>
+    <div class="container" id="about">
+        <h2>Hakkımızda</h2>
+        <p>İzfashion olarak modern ve zarif kadın giyim ürünlerini sunmayı hedefliyoruz. Misyonumuz, kadınların kendilerini şık ve rahat hissetmelerini sağlamak. Vizyonumuz, modayı herkes için erişilebilir kılmak.</p>
+    </div>
+    <div class="container" id="contact">
+        <h2>İletişim</h2>
+        <p>Bize ulaşın: info@izfashion.com</p>
+        <p>Sosyal Medya:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/izfashion">Instagram</a></li>
+            <li><a href="https://www.facebook.com/izfashion">Facebook</a></
